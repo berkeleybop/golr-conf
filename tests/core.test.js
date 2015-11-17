@@ -22,14 +22,14 @@ var golr_conf = require('..');
 ///
 
 // 
-describe('bbop-golr.class_field', function(){
+describe('golr-conf.conf_field', function(){
 
     it('1', function(){
 
 	// Absolute basics.
 	var fconf = amigo.data.golr['ontology']['fields_hash']['source'];
 	var cf = new golr_conf.conf_field(fconf);
-	assert.equal(cf._is_a, 'bbop-golr.conf_field', "me");
+	assert.equal(cf._is_a, 'golr-conf.conf_field', "me");
 	
 	// Simple getters.
 	assert.equal("Ontology source", cf.display_name(), "display_name");
@@ -47,13 +47,13 @@ describe('bbop-golr.class_field', function(){
 });
 
 
-describe('bbop-golr.conf_class', function(){
+describe('golr-conf.conf_class', function(){
 
     it('1', function(){
 
 	// Absolute basics.
 	var cc = new golr_conf.conf_class(amigo.data.golr['annotation']);
-	assert.equal(cc._is_a, 'bbop-golr.conf_class', "me");
+	assert.equal(cc._is_a, 'golr-conf.conf_class', "me");
 	
 	// Simple getters.
 	assert.equal("Annotations", cc.display_name(), "display_name");
@@ -92,13 +92,13 @@ describe('bbop-golr.conf_class', function(){
 });
 
 
-describe('top-level bbop-golr.conf', function(){
+describe('top-level golr-conf.conf', function(){
 
     it('1', function(){
 
 	// Absolute basics.
 	var c = new golr_conf.conf(amigo.data.golr);
-	assert.equal(c._is_a, 'bbop-golr.conf', "me");
+	assert.equal(c._is_a, 'golr-conf.conf', "me");
 
 	// Simple getters.
 	assert.equal("Ontology", c.get_class('ontology').display_name(),
