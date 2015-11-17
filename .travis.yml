@@ -1,0 +1,10 @@
+language: node_js
+node-js: "0.12"
+before_script:
+  - npm install -g gulp
+script:
+  ## Quick user data check.
+  - gulp test
+notifications:
+  email:
+    - sjcarbon@lbl.gov
