@@ -18,7 +18,7 @@ This package contains three sub-packages:
 
 The main current example of the conversion of the YAML source files to the JSON used for class instantiation is the blob used by the standard AmiGO GOlr configuration load. It easy to seen the similarities between the [YAML files](https://github.com/geneontology/amigo/tree/master/metadata) and the [JSON output](http://amigo.geneontology.org/javascript/npm/amigo2-instance-data/lib/data/golr.js) used to drive the interface.
 
-(The YAML to JSON conversion has traditionally been done with an old perl script, but we're currently looking at a direct YAML to JSON conversion for instantiation--feel free to drop us a line.)
+(The YAML to JSON conversion has traditionally been done ad-hoc or with an old perl script, but we're currently looking at a direct YAML to JSON conversion for instantiation--feel free to drop us a line.)
 
 For more detailed information, please see
 the [unit tests](https://github.com/berkeleybop/golr-conf/tree/master/tests).
